@@ -1,0 +1,30 @@
+GET http://localhost:3200/
+
+###
+POST http://localhost:3200/Staff/AddStaff
+Content-Type: application/json
+
+{
+    "EmpName":"Pavan",
+    "EmpEmail":"Pavan@gmail.com",
+    "EmpPassword":"Pavan@123",
+    "EmpPho":"9878765432",
+    "EmpAdd":"Vijayawada"
+}
+###
+GET http://localhost:3200/Staff/GetStaffData
+###
+GET http://localhost:3200/Staff/GetSingleData/6628d6059d8f2481e6f13b69
+###
+PUT  http://localhost:3200/Staff/UpdateStaffData/6628d6059d8f2481e6f13b69
+Content-Type: application/json
+
+{
+    "EmpName":"Siva Krishna",
+    "EmpEmail":"sivaKrishna@gmail.com",
+    "EmpPassword":"Sivakrishna@123",
+    "EmpPho":"9878765654",
+    "EmpAdd":"Vijayawada"
+}
+###
+DELETE http://localhost:3200/Staff/deleteStaff/6628d6059d8f2481e6f13b69
